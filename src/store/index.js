@@ -17,6 +17,9 @@ export default createStore({
     getCurrent(state, getters) {
       return (state.results.length > 0) ? getters.getResults : getters.getPokemons;
     },
+    getTypes(state) {
+      return state.types;
+    },
   },
   mutations: {
     setPokemons(state, payload) {
