@@ -1,0 +1,94 @@
+@import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: "Karla"; /* düzenlenecek */
+}
+
+body {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 700;
+}
+
+.Bug, .Grass {
+  background-color: #70A83B;
+}
+
+.Dark, .Rock, .Steel {
+  background-color: #A1A1A1;
+}
+
+.Dragon, .Fire, .Fighting {
+  background-color: #f76545;
+}
+
+.Electric {
+  background-color: #F7C545;
+}
+
+.Fairy, .Ghost, .Poison, .Psychic {
+  background-color: #a974bc;
+}
+
+.Ice, .Water {
+  background-color: #A2CFF0;
+}
+
+.Ground {
+  background-color: #9b897b;
+}
+
+.Normal, .Flying {
+  background-color: #76AADB;
+}

@@ -1,0 +1,15 @@
+:root {
+  /* MARGIN SZES */
+  --xsmall: 2rem;
+  --small: 4rem;
+  --medium: 5rem;
+  --large: 6rem;
+  --xlarge: 7.5rem;
+  /* COLORS */
+  --primary: #f2b807;
+  --second: #f28f16;
+  --third: #f5db13;
+  --danger: #d93e30;
+  --white: #f2f2f2;
+  --dark: #212121;
+}
