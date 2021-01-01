@@ -16,11 +16,11 @@ export default {
   },
   computed: {
     pokemons() {
-      return this.$store.state.pokemons;
+      return this.$store.getters.getCurrent;
     },
   },
   created() {
-    this.$store.dispatch('fetchPokemons');
+    this.$store.dispatch('fetchAllPokemons');
   },
 };
 </script>
