@@ -1,7 +1,7 @@
 <template>
     <div class="filters">
         <span v-for="type in types" :key="type">
-            <input type="checkbox" :name="type" :id="type" :value="type">
+            <input type="checkbox" :name="type" :id="type" @change="typeChecked($event, type)">
             <label :for="type">{{type}}</label>
         </span>
     </div>
@@ -12,6 +12,15 @@ export default {
   computed: {
     types() {
       return this.$store.state.types;
+    },
+    methods: {
+      typeChecked({ target }, type) {
+        if (target.checked) {
+          this.$store.dispatch('addType', type);
+        } else {
+          this.$store.dispatch('removeType', type);
+        }
+      },
     },
   },
   created() {
