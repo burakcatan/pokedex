@@ -27,7 +27,7 @@
 <script>
 export default {
   props: {
-    pokemon: String,
+    pokemon: Object,
   },
 };
 </script>
