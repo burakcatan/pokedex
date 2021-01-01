@@ -30,23 +30,23 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-  .filters{
-      width: 80%;
-      display:grid;
-      grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
-      margin-top: 20px;
-      margin-left:auto;
-      margin-right:auto;
-      padding: 20px 0px 20px 40px;
-      height:auto;
-      color: black;
-      justify-items: left;
-      background-color: #F6F7F9;
-      box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
-      border-radius: 8px;
+.filters{
+    width: 80%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 20px 0px 20px 40px;
+    height:auto;
+    color: black;
+    justify-items: left;
+    background-color: #F6F7F9;
+    box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+    border-radius: 8px;
 
-      span * {
-      padding: 5px;
+    span * {
+    padding: 5px;
   }
-  }
+}
 </style>
