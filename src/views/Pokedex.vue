@@ -4,6 +4,7 @@
       <h1>All <b>Pokemons</b> for you to choose your favorite</h1>
     </div>
     <Search />
+    <Filters />
     <Gallery />
   </div>
 </template>
@@ -11,11 +12,13 @@
 <script>
 import Gallery from '@/components/Gallery.vue';
 import Search from '@/components/Search.vue';
+import Filters from '@/components/Filters.vue';
 
 export default {
   components: {
     Gallery,
     Search,
+    Filters,
   },
 };
 </script>
