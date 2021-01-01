@@ -11,16 +11,16 @@
 export default {
   computed: {
     types() {
-      return this.$store.state.types;
+      return this.$store.getters.getTypes;
     },
-    methods: {
-      typeChecked({ target }, type) {
-        if (target.checked) {
-          this.$store.dispatch('addType', type);
-        } else {
-          this.$store.dispatch('removeType', type);
-        }
-      },
+  },
+  methods: {
+    typeChecked({ target }, type) {
+      if (target.checked) {
+        this.$store.dispatch('addType', type);
+      } else {
+        this.$store.dispatch('removeType', type);
+      }
     },
   },
   created() {
