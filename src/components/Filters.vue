@@ -31,7 +31,7 @@ export default {
 
 <style lang='scss' scoped>
 .filters{
-    width: 80%;
+    width: 70%;
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
     margin-top: 20px;
@@ -44,6 +44,10 @@ export default {
     background-color: #F6F7F9;
     box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
     border-radius: 8px;
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
 
     span * {
     padding: 5px;
