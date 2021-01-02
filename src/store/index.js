@@ -20,6 +20,9 @@ export default createStore({
     getTypes(state) {
       return state.types;
     },
+    getPokemonNames(state) {
+      return state.pokemons.map((pokemon) => pokemon.Name);
+    },
   },
   mutations: {
     setPokemons(state, payload) {
