@@ -5,11 +5,13 @@
     @focus="toggleDropdown"
     @blur="toggleDropdown"
     @keyup.enter="handleSearch"/>
+    <transition name="slide-fade">
     <div class="dropdown-content"
     v-if="showDropdown && query.length > 0 && pokemons.length > 0">
       <span v-for="item in pokemons.slice(0,5)" :key="item"
       @click="dropdownClicked(item)"><a>{{item}}</a></span>
     </div>
+    </transition>
   </div>
 </template>
 
@@ -96,5 +98,19 @@ input {
       padding-bottom: 10px;
     }
   }
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
 }
 </style>
